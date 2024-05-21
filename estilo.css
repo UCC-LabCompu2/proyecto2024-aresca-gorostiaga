@@ -1,0 +1,354 @@
+/*Estilo de Index*/
+.PaginaPrincipal{
+    background-color: beige;
+    background-image: url("imagenes/fondo_quiz.jpg");
+    background-size: cover;
+    text-align: center;
+    font-size: 26px;
+}
+.TituloPrincipal{
+    border: 7px dashed lightpink;
+    margin: 10px;
+    padding: 5px 30px;
+}
+#principal{
+    width: 100px;
+    float: left;
+}
+.TituloPrincipal{
+    font-family: sans-serif;
+}
+div.especial{
+    border: none;
+    margin: 30px;
+    padding: 5px 30px;
+}
+a:link , a:visited{
+    color: violet;
+}
+a:hover{
+    font-size: 1.1em;
+}
+a:active{
+    font-weight: bold;
+}
+
+/*Estilo de Geografia*/
+
+.tituloGeo{
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.paginaUno{
+    background-image: url("imagenes/fondo_geo.jpeg");
+    background-size: cover;
+
+}
+
+.tituloGeo2{
+    text-align: center;
+    border: none;
+    margin: auto;
+}
+.p{
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.container{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+#p0{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p1{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p2{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p3{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p4{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p5{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p6{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p7{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p8{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p9{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p10{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p11{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p12{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p13{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p14{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p15{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p16{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p17{
+    padding: 10px;
+    font-size: 18px;
+    width: 620px;
+    display: block;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    margin-bottom: 3px;
+}
+label:hover{
+    background: lightblue ;
+}
+.botonGeo{
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 20px;
+    border: none;
+}
+.botonGeo:hover{
+    background: lightseagreen;
+}
+
+/*Estilo de Deporte*/
+
+.tituloDep{
+    background: darkblue;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+.contenido{
+    background-image: url("imagenes/fondo_depor.jpg");
+    background-size: cover;
+}
+div{
+    max-width: 800px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 40px;
+}
+.tituloDep2 {
+    text-align: center;
+    border: none;
+    margin: auto;
+}
+.pr{
+    border: 2px solid blue;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #000000;
+    margin-bottom: 3px;
+}
+label:hover{
+    background: lightsteelblue ;
+}
+.botonDep{
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    background-color: cadetblue;
+    border-radius: 20px;
+    border: none;
+}
+.botonDep:hover{
+    background: darkblue;
+}
+
+/*Estilo de Entretenimiento*/
+
+.PaginaDos{
+    background-color: lightpink;
+    background: linear-gradient(to right, #f175b9, #ffa5b4);
+}
+.tituloEntre{
+    background: plum;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+.tituloEntre2{
+    text-align: center;
+    border: none;
+    margin: auto;
+    color: slateblue;
+}
+.botonEntre{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    background-color: lightpink;
+    border-radius: 50px;
+    border: none;
+}
+.botonEntre:hover{
+    background: deeppink;
+}
+.entreteni{
+    display: block;
+    padding: 1px;
+    border-radius: 0;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.entreteni:hover{
+    background: none;
+}
