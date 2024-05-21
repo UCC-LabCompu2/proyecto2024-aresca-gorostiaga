@@ -266,6 +266,7 @@ label:hover{
     background-size: cover;
 }
 div{
+    background-color: lightsteelblue;
     max-width: 800px;
     border: 2px solid black;
     margin: auto;
