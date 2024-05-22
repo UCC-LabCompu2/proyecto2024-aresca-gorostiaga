@@ -16,8 +16,13 @@
     float: left;
 }
 .TituloPrincipal{
-    font-family: sans-serif;
-}
+        font-family: "Jersey 15", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    font-size: 80px;
+    }
+
+
 div.especial{
     border: none;
     margin: 30px;
@@ -40,11 +45,12 @@ a:active{
     color: #fff;
     padding: 15px 0;
     text-align: center;
-    font-family: sans-serif;
-
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .paginaUno{
-    background-image: url("imagenes/fondo_geo.jpeg");
+    background-image: url("imagenes/fondo_geog.jpg");
     background-size: cover;
 
 }
@@ -61,6 +67,7 @@ a:active{
     margin: 10px 0;
 }
 .container{
+    background-color: lightsteelblue;
     max-width: 700px;
     margin: auto;
     padding: 20px;
@@ -259,14 +266,19 @@ label:hover{
     color: #fff;
     padding: 15px 0;
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+
+
 }
 .contenido{
     background-image: url("imagenes/fondo_depor.jpg");
     background-size: cover;
 }
-div{
-    background-color: lightsteelblue;
+div.deporte{
+   background-color: lightsteelblue;
     max-width: 800px;
     border: 2px solid black;
     margin: auto;
@@ -293,7 +305,7 @@ label{
     margin-bottom: 3px;
 }
 label:hover{
-    background: lightsteelblue ;
+    background: lightblue ;
 }
 .botonDep{
     width: 70%;
@@ -314,20 +326,26 @@ label:hover{
 .PaginaDos{
     background-color: lightpink;
     background: linear-gradient(to right, #f175b9, #ffa5b4);
+    text-align: center;
+    font-size: 18px;
 }
 .tituloEntre{
     background: plum;
     color: #fff;
     padding: 15px 0;
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .tituloEntre2{
     text-align: center;
     border: none;
     margin: auto;
     color: slateblue;
+    font-size: 30px;
 }
+
 .botonEntre{
     width: 40%;
     display: block;
