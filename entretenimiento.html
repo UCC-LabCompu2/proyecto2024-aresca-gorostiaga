@@ -1,101 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Titan+One&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="imagenes/fav_icono.png">
-    <link rel="stylesheet" href="estilo.css">
-    <meta charset="UTF-8">
-    <meta content="Amparo_Aresca_y_Franco_Gorostiaga" name="nombre">
-    <meta content=" quiz,cultura" name="keywords">
-    <title>Entretenimiento</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Titan+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="imagenes/fav_icono.png">
+        <link rel="stylesheet" href="estilo.css">
+        <meta charset="UTF-8">
+        <meta content="Amparo_Aresca_y_Franco_Gorostiaga" name="nombre">
+        <meta content="cuestionario de preguntas sobre entretenimiento" name="descripcion" >
+        <meta content="quiz,cultura" name="keywords">
+        <title>Entretenimiento</title>
+    </head>
+    <body class="PaginaDos">
+    <header>
+        <h1 class="tituloEntre">Responde estas preguntas sobre Entretenimiento</h1>
+        <h2 class="tituloEntre2">¡Prueba tus conocimientos!</h2>
+    </header>
 
-</head>
+    <form id="quizzForm3" name="entretenimiento">
+        <div>
+            <section class="pre">
+                <h3>1-¿Cómo se llamaba el cantante de Queen?</h3>
+                <label class="entreteni" for="p0">
+                    <input type="text" name="p0" id="p0" placeholder="Escriba Cantante" size="50" maxlength="40" onchange="evaluateQuiz3(this.id,this.value)">
+                </label>
+            </section>
+        </div>
 
-<body class="PaginaDos">
+        <div>
+            <section class="pre">
+                <h3>2-Jack Sparrow es el personaje principal de una saga de películas, ¿Cuál?</h3>
+                <label class="entreteni" for="p1">
+                    <input type="text" name="p1" id="p1" placeholder="Escriba Película" size="50" maxlength="40" onchange="evaluateQuiz3(this.id,this.value)">
+                </label>
+            </section>
+        </div>
 
-<header>
-    <h1 class="tituloEntre">Responde estas preguntas sobre Entretenimiento</h1>
-    <h2 class="tituloEntre2">Prueba tus conocimientos!</h2>
-</header>
+        <div>
+            <section class="pre">
+                <h3>3-¿A qué grupo musical pertenece la canción "Smells Like Teen Spirit"?</h3>
+                <label class="entreteni" for="p2">
+                    <select name="p2" id="p2">
+                        <option value="">-</option>
+                        <option value="The Melvins">The Melvins</option>
+                        <option value="Screaming Trees">Screaming Trees</option>
+                        <option value="Nirvana">Nirvana</option>
+                        <option value="Mudhoney">Mudhoney</option>
+                    </select>
+                </label>
+            </section>
+        </div>
 
-<div>
-    <section class="pre">
-        <h3>1-Como se llamaba el cantante de Queen?</h3>
-        <label class="entreteni" for="p0">
-            <input type="text" name="p0" id="p0" placeholder="Escriba Cantante" size="50" maxlength="40">
-        </label>
-    </section>
-</div>
+        <div>
+            <section class="pre">
+                <h3>4-¿Qué película tiene más Oscar: "Titanic", "Ben-Hur", "El Señor de los Anillos"?</h3>
+                <label class="entreteni" for="p3">
+                    <input type="text" name="p3" id="p3" placeholder="Escriba Película" size="60" maxlength="40" onchange="evaluateQuiz3(this.id,this.value)">
+                </label>
+            </section>
+        </div>
 
-<div>
-    <section class="pre">
-        <h3>2-Jack Sparrow es el personaje principal de una saga de peliculas, Cual?</h3>
-        <label class="entreteni" for="p1">
-            <input type="text" name="p0" id="p1" placeholder="Escriba Pelicula" size="50" maxlength="40">
-        </label>
-    </section>
-</div>
+        <div>
+            <section class="pre">
+                <h3>5-¿Cuál es la película más taquillera de la historia?</h3>
+                <label class="entreteni" for="p4">
+                    <select name="p4" id="p4">
+                        <option value="">-</option>
+                        <option value="Avengers: Endgame">Avengers: Endgame</option>
+                        <option value="Avatar">Avatar</option>
+                        <option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+                        <option value="Titanic">Titanic</option>
+                    </select>
+                </label>
+            </section>
+        </div>
 
-<div>
-    <section class="pre">
-        <h3>3-A que grupo musical pertenece la cancion "Smell like teen spirit"?</h3>
-        <label class="entreteni">
-            <select>
-                <option>-</option>
-                <option>The Melvins</option>
-                <option>Screaming Trees</option>
-                <option>Nirvana</option>
-                <option>Mudhoney</option>
-            </select>
-        </label>
-    </section>
-</div>
+        <div>
+            <section class="pre">
+                <h3>6-¿En qué época está ambientada Bridgerton?</h3>
+                <label class="entreteni" for="p5">
+                    <select name="p5" id="p5">
+                        <option value="">-</option>
+                        <option value="Siglo XX">Siglo XX</option>
+                        <option value="Siglo XV">Siglo XV</option>
+                        <option value="Siglo XIX">Siglo XIX</option>
+                    </select>
+                </label>
+            </section>
+        </div>
+        <button class="botonEntre" type="button" onclick="evaluateQuiz3()">CORREGIR</button>
+    </form>
 
-<div>
-    <section class="pre">
-        <h3>4-Que pelicula tiene mas Oscar: "Titanic","Ben-Hur","El Senior de los anillos: el retorno del Rey"</h3>
-        <label class="entreteni" for="p2">
-            <input type="text" name="p0" id="p2" placeholder="Escriba Pelicula" size=60" maxlength="40">
-        </label>
-    </section>
-</div>
+    <h2 class="tituloEntre2 aciertos">Cantidad acertadas: <span id="resultado"></span></h2>
 
-<div>
-    <section class="pre">
-        <h3>5-Cual es la pelicula mas taquillera de la historia?</h3>
-        <label class="entreteni">
-            <select>
-            <option>-</option>
-            <option>Avengers:Endgame</option>
-            <option>Avatar</option>
-            <option>Spider-Man:No way home</option>
-            <option>Titanic</option>
-            </select>
-        </label>
-    </section>
-</div>
+    <a class="volverButton" href="index.html">Volver al inicio</a>
 
-<div>
-    <section class="pre">
-        <h3>6-En que epoca esta ambientada bridgerton?</h3>
-        <label class="entreteni">
-            <select>
-                <option>-</option>
-                <option>Siglo XX</option>
-                <option>Siglo XV</option>
-                <option>Siglo XIX</option>
-            </select>
-        </label>
-    </section>
-</div>
-<button class="botonEntre">CORREGIR</button>
-
-<h2 class="tituloEntre2">Cantidad acertadas:<span id="resultado"></span> </h2>
-
-<footer>
-    BUENA SUERTE<3
-</footer>
-</body>
-</html>
+    <script src="main.js"></script>
+    </body>
+    </html>

@@ -1,4 +1,21 @@
 /*Estilo de Index*/
+
+body{
+    font-family: 'Poppins';
+    .Menu{
+        a{
+            color: #726464 ;
+
+        }
+    }
+}
+a{
+    color: white;
+    transition: all .5s;
+}
+a:link, a:visited {
+    color: rgb(255, 255, 255) ;
+}
 .PaginaPrincipal{
     background-color: beige;
     background-image: url("imagenes/fondo_quiz.jpg");
@@ -41,7 +58,7 @@ a:active{
 /*Estilo de Geografia*/
 
 .tituloGeo{
-    background: #000;
+
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -50,219 +67,246 @@ a:active{
     font-style: normal;
 }
 .paginaUno{
-    background-image: url("imagenes/fondo_geog.jpg");
+    background-image: url("imagenes/fondoGeo.jpg");
     background-size: cover;
+    background-attachment: fixed;
+
 
 }
 
 .tituloGeo2{
+    color: #ffffff;
     text-align: center;
     border: none;
     margin: auto;
+    margin-bottom: 2vh;
+}
+.aciertos{
+    padding-block: 5vh;
 }
 .p{
     border: none;
     border-radius: 7px;
     padding: 10px;
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3{
+        margin-block: 0;
+        margin-bottom: .7em;
+    }
+
+}
+#quizForm{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 .container{
-    background-color: lightsteelblue;
-    max-width: 700px;
+    background-color: #84c3ec;
+    width: 50vw;
     margin: auto;
     padding: 20px;
-}
+    border-radius: 20px;
+    .p{
+        label{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 2vw;
+            background-color:#5d9bc554;
+            }
+            label:hover{
+                background: #5d9bc5;
+                transition: all .5s;
+            }
+        }
+    }
+
+
 #p0{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p1{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p2{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p3{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p4{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p5{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p6{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p7{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p8{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p9{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p10{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p11{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p12{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p13{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p14{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p15{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p16{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 #p17{
     padding: 10px;
     font-size: 18px;
-    width: 620px;
+
     display: block;
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 label{
     display: block;
     padding: 7px;
     border-radius: 7px;
     cursor: pointer;
-    border: 1px solid #000000;
     margin-bottom: 3px;
 }
-label:hover{
-    background: lightblue ;
-}
+
 .botonGeo{
-    width: 60%;
+    font-family: 'Poppins';
+    font-size: 1.7vh;
+    font-weight: 600;
+    width: 53vw;
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: 2vh;
     cursor: pointer;
-    background-color: aquamarine;
-    border-radius: 20px;
+    background-color: rgb(127, 208, 255);
+    border-radius: 100px;
     border: none;
 }
 .botonGeo:hover{
-    background: lightseagreen;
+    transition: all .5s;
+    background: rgb(76, 145, 185);
+}
+.volverButton{
+    color: white !important;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 /*Estilo de Deporte*/
 
 .tituloDep{
-    background: darkblue;
+
+
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -274,63 +318,92 @@ label:hover{
 
 }
 .contenido{
-    background-image: url("imagenes/fondo_depor.jpg");
+    background-image: url("imagenes/fondoDep.jpg");
     background-size: cover;
+    background-attachment: fixed;
+}
+#quizzForm2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 div.deporte{
-   background-color: lightsteelblue;
-    max-width: 800px;
-    border: 2px solid black;
+   background-color: rgb(28, 85, 45);
+    width: 50vw;
+    border-radius: 20px;
     margin: auto;
     padding: 40px;
+    h3{
+        margin: 0px;
+    }
 }
 .tituloDep2 {
     text-align: center;
     border: none;
-    margin: auto;
+    margin-bottom:2rem;
 }
 .pr{
-    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     border-radius: 7px;
     padding: 10px;
     margin: 10px 0;
+    label{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 7px;
+        cursor: pointer;
+
+        background: #ffffff18;
+        margin-bottom: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 2vw;
+        label:hover{
+    
+            transition: all .5s;
+        }
+    }
+    label:hover{
+        background: rgba(0, 0, 0, 0.178) ;
+    }
 }
 
-label{
-    display: block;
-    padding: 7px;
-    border-radius: 7px;
-    cursor: pointer;
-    border: 1px dashed #000000;
-    margin-bottom: 3px;
-}
-label:hover{
-    background: lightblue ;
-}
+
 .botonDep{
-    width: 70%;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.7vh;
+    font-weight: 600;
+    width: 55vw;
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: 2vh;
     cursor: pointer;
-    background-color: cadetblue;
-    border-radius: 20px;
+    background-color: rgb(72, 141, 101);
+    border-radius: 100px;
     border: none;
 }
 .botonDep:hover{
-    background: darkblue;
+    background-color: rgb(46, 100, 69);
+    transition: all .5s;
 }
 
 /*Estilo de Entretenimiento*/
 
 .PaginaDos{
-    background-color: lightpink;
-    background: linear-gradient(to right, #f175b9, #ffa5b4);
+
+    background-image: url(imagenes/fondoEnt.jpg);
+    background-attachment: fixed;
     text-align: center;
     font-size: 18px;
 }
 .tituloEntre{
-    background: plum;
+    background-color: #631e1e;
+    box-shadow: 10px 10px 20px 0px #00000056;
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -339,25 +412,52 @@ label:hover{
     font-style: normal;
 }
 .tituloEntre2{
+    color: white;
     text-align: center;
     border: none;
-    margin: auto;
-    color: slateblue;
+    margin-bottom: 1.8rem;
     font-size: 30px;
 }
-
+#quizzForm3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.pre{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #631e1e;
+    width: 45vw;
+    border-radius: 20px;
+    height: 25vh;
+    h3{
+        margin-block-start: 0;
+        margin-block-end: 2em;
+        font-size: 110%;
+    }
+}
 .botonEntre{
-    width: 40%;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.7vh;
+    font-weight: 600;
+    width: 55vw;
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: 2vh;
     cursor: pointer;
-    background-color: lightpink;
-    border-radius: 50px;
+    background-color: #742222;
+    border-radius: 100px;
     border: none;
 }
 .botonEntre:hover{
-    background: deeppink;
+    background: #551d1d;
+    transition: all .5s;
 }
 .entreteni{
     display: block;
