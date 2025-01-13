@@ -1,101 +1,100 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Titan+One&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="imagenes/fav_icono.png">
-        <link rel="stylesheet" href="estilo.css">
-        <meta charset="UTF-8">
-        <meta content="Amparo_Aresca_y_Franco_Gorostiaga" name="nombre">
-        <meta content="cuestionario de preguntas sobre entretenimiento" name="descripcion" >
-        <meta content="quiz,cultura" name="keywords">
-        <title>Entretenimiento</title>
-    </head>
-    <body class="PaginaDos">
-    <header>
-        <h1 class="tituloEntre">Responde estas preguntas sobre Entretenimiento</h1>
-        <h2 class="tituloEntre2">¡Prueba tus conocimientos!</h2>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/fav_icono.png">
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta content="Amparo_Aresca_y_Franco_Gorostiaga" name="nombre">
+    <meta content="quiz,cultura" name="keywords">
+    <title>Entretenimiento</title>
+</head>
+<body class="PaginaDos">
+<header>
+    <h1 class="tituloEntre">Responde estas preguntas sobre Entretenimiento</h1>
+    <h2 class="tituloEntre2">¡Prueba tus conocimientos!</h2>
+</header>
 
-    <form id="quizzForm3" name="entretenimiento">
-        <div>
-            <section class="pre">
-                <h3>1-¿Cómo se llamaba el cantante de Queen?</h3>
-                <label class="entreteni" for="p0">
-                    <input type="text" name="p0" id="p0" placeholder="Escriba Cantante" size="50" maxlength="40" onchange="evaluateQuiz3(this.id,this.value)">
-                </label>
-            </section>
-        </div>
+<form id="quizzForm3">
+    <div>
+        <section class="pre">
+            <h3>1-¿Cómo se llamaba el cantante de Queen?</h3>
+            <label class="entreteni" for="p0">
+                <input type="text" name="p0" id="p0" placeholder="Escriba Cantante" size="50" maxlength="40">
+            </label>
+        </section>
+    </div>
 
-        <div>
-            <section class="pre">
-                <h3>2-Jack Sparrow es el personaje principal de una saga de películas, ¿Cuál?</h3>
-                <label class="entreteni" for="p1">
-                    <input type="text" name="p1" id="p1" placeholder="Escriba Película" size="50" maxlength="40" onchange="evaluateQuiz3(this.id,this.value)">
-                </label>
-            </section>
-        </div>
+    <div>
+        <section class="pre">
+            <h3>2-Jack Sparrow es el personaje principal de una saga de películas, ¿Cuál?</h3>
+            <label class="entreteni" for="p1">
+                <input type="text" name="p1" id="p1" placeholder="Escriba Película" size="50" maxlength="40">
+            </label>
+        </section>
+    </div>
 
-        <div>
-            <section class="pre">
-                <h3>3-¿A qué grupo musical pertenece la canción "Smells Like Teen Spirit"?</h3>
-                <label class="entreteni" for="p2">
-                    <select name="p2" id="p2">
-                        <option value="">-</option>
-                        <option value="The Melvins">The Melvins</option>
-                        <option value="Screaming Trees">Screaming Trees</option>
-                        <option value="Nirvana">Nirvana</option>
-                        <option value="Mudhoney">Mudhoney</option>
-                    </select>
-                </label>
-            </section>
-        </div>
+    <div>
+        <section class="pre">
+            <h3>3-¿A qué grupo musical pertenece la canción "Smells Like Teen Spirit"?</h3>
+            <label class="entreteni">
+                <select name="p2" id="p2">
+                    <option value="">-</option>
+                    <option value="The Melvins">The Melvins</option>
+                    <option value="Screaming Trees">Screaming Trees</option>
+                    <option value="Nirvana">Nirvana</option>
+                    <option value="Mudhoney">Mudhoney</option>
+                </select>
+            </label>
+        </section>
+    </div>
 
-        <div>
-            <section class="pre">
-                <h3>4-¿Qué película tiene más Oscar: "Titanic", "Ben-Hur", "El Señor de los Anillos"?</h3>
-                <label class="entreteni" for="p3">
-                    <input type="text" name="p3" id="p3" placeholder="Escriba Película" size="60" maxlength="40" onchange="evaluateQuiz3(this.id,this.value)">
-                </label>
-            </section>
-        </div>
+    <div>
+        <section class="pre">
+            <h3>4-¿Qué película tiene más Oscar: "Titanic", "Ben-Hur", "El Señor de los Anillos"?</h3>
+            <label class="entreteni" for="p2">
+                <input type="text" name="p3" id="p3" placeholder="Escriba Película" size="60" maxlength="40">
+            </label>
+        </section>
+    </div>
 
-        <div>
-            <section class="pre">
-                <h3>5-¿Cuál es la película más taquillera de la historia?</h3>
-                <label class="entreteni" for="p4">
-                    <select name="p4" id="p4">
-                        <option value="">-</option>
-                        <option value="Avengers: Endgame">Avengers: Endgame</option>
-                        <option value="Avatar">Avatar</option>
-                        <option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
-                        <option value="Titanic">Titanic</option>
-                    </select>
-                </label>
-            </section>
-        </div>
+    <div>
+        <section class="pre">
+            <h3>5-¿Cuál es la película más taquillera de la historia?</h3>
+            <label class="entreteni">
+                <select name="p4" id="p4">
+                    <option value="">-</option>
+                    <option value="Avengers: Endgame">Avengers: Endgame</option>
+                    <option value="Avatar">Avatar</option>
+                    <option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+                    <option value="Titanic">Titanic</option>
+                </select>
+            </label>
+        </section>
+    </div>
 
-        <div>
-            <section class="pre">
-                <h3>6-¿En qué época está ambientada Bridgerton?</h3>
-                <label class="entreteni" for="p5">
-                    <select name="p5" id="p5">
-                        <option value="">-</option>
-                        <option value="Siglo XX">Siglo XX</option>
-                        <option value="Siglo XV">Siglo XV</option>
-                        <option value="Siglo XIX">Siglo XIX</option>
-                    </select>
-                </label>
-            </section>
-        </div>
-        <button class="botonEntre" type="button" onclick="evaluateQuiz3()">CORREGIR</button>
-    </form>
+    <div>
+        <section class="pre">
+            <h3>6-¿En qué época está ambientada Bridgerton?</h3>
+            <label class="entreteni">
+                <select name="p5" id="p5">
+                    <option value="">-</option>
+                    <option value="Siglo XX">Siglo XX</option>
+                    <option value="Siglo XV">Siglo XV</option>
+                    <option value="Siglo XIX">Siglo XIX</option>
+                </select>
+            </label>
+        </section>
+    </div>
+    <button class="botonEntre" type="button" onclick="evaluateQuiz3()">CORREGIR</button>
+</form>
 
-    <h2 class="tituloEntre2 aciertos">Cantidad acertadas: <span id="resultado"></span></h2>
+<h2 class="tituloEntre2 aciertos">Cantidad acertadas: <span id="resultado"></span></h2>
 
-    <a class="volverButton" href="index.html">Volver al inicio</a>
+<a class="volverButton" href="index.html">Volver al inicio</a>
 
-    <script src="main.js"></script>
-    </body>
-    </html>
+<script src="main.js"></script>
+</body>
+</html>
