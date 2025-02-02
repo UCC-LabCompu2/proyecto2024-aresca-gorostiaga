@@ -471,3 +471,17 @@ div.deporte{
 .entreteni:hover{
     background: none;
 }
+
+#loadingCanvas {
+    display: block;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+#resultadoText {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}

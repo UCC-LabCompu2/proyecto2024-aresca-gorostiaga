@@ -125,14 +125,13 @@
             </label>
         </section>
     </div>
-    <button class="botonDep" type="button" onclick="evaluateQuiz2()">CORREGIR</button>
+    <button type="button" class="botonDep" onclick="evaluateQuiz2()">CORREGIR</button>
+    <canvas id="loadingCanvas" width="100" height="100" style="display: none; margin: 20px auto;"></canvas>
+    <h3 id="resultadoText" style="display: none;">¡Resultado listo!</h3>
+    <a class="volverButton" href="index.html">Volver al inicio</a>
+
 </form>
 
-<div>
-    <h2 class="tituloDep2">Cantidad acertadas: <span id="resultado"></span></h2>
-</div>
-
-<a class="volverButton" href="index.html">Volver al inicio</a>
 <script src="main.js"></script>
 </body>
 </html>
