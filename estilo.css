@@ -372,7 +372,6 @@ div.deporte{
     }
 }
 
-
 .botonDep{
     color: white;
     font-family: 'Poppins';
@@ -484,4 +483,16 @@ div.deporte{
     font-size: 1.5em;
     margin-top: 20px;
     color: #333;
+}
+
+.Footer {
+    background-color: #7e7474;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
 }

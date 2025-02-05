@@ -157,8 +157,6 @@ const evaluateQuiz3 = () => {
     }, 500);
 };
 
-//canvas
-
 // Canvas y contexto
 const canvas = document.getElementById('loadingCanvas');
 const ctx = canvas ? canvas.getContext('2d') : null;
