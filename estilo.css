@@ -1,38 +1,43 @@
 /*Estilo de Index*/
 
-body{
+body {
     font-family: 'Poppins';
-    .Menu{
-        a{
-            color: #726464 ;
-
+    .Menu {
+        a {
+            color: #726464;
         }
     }
 }
-a{
+
+a {
     color: white;
     transition: all .5s;
 }
+
 a:link, a:visited {
-    color: rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
 }
-.PaginaPrincipal{
+
+.PaginaPrincipal {
     background-color: beige;
-    background-image: url("imagenes/fondo_quiz.jpg");
+    background-image: url("imagenes/fondo_q.png");
     background-size: cover;
     text-align: center;
     font-size: 26px;
 }
-.TituloPrincipal{
+
+.TituloPrincipal {
     border: 7px dashed lightpink;
-    margin: 10px;
-    padding: 5px 30px;
+    margin: 10px; /*espaciado externo*/
+    padding: 5px 30px;/*espaciado interno*/
 }
-#principal{
+
+#principal {
     width: 100px;
     float: left;
 }
-.TituloPrincipal{
+
+.TituloPrincipal {
     font-family: "Jersey 15", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -40,24 +45,27 @@ a:link, a:visited {
 }
 
 
-div.especial{
+div.especial {
     border: none;
     margin: 30px;
     padding: 5px 30px;
 }
-a:link , a:visited{
+
+a:link, a:visited {
     color: violet;
 }
-a:hover{
+
+a:hover {
     font-size: 1.1em;
 }
-a:active{
+
+a:active {
     font-weight: bold;
 }
 
 /*Estilo de Geografia*/
 
-.tituloGeo{
+.tituloGeo {
 
     color: #fff;
     padding: 15px 0;
@@ -66,57 +74,65 @@ a:active{
     font-weight: 400;
     font-style: normal;
 }
-.paginaUno{
+
+.paginaUno {
     background-image: url("imagenes/fondoGeo.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover;/*imagen cubre fondo*/
+    background-attachment: fixed;/*fondo no se mueve con scroll*/
 
 
 }
 
-.tituloGeo2{
+.tituloGeo2 {
     color: #ffffff;
     text-align: center;
     border: none;
     margin: auto;
     margin-bottom: 2vh;
 }
-.aciertos{
+
+.aciertos {
     padding-block: 5vh;
 }
-.p{
+
+.p {
     border: none;
     border-radius: 7px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    h3{
+
+    h3 {
         margin-block: 0;
         margin-bottom: .7em;
     }
 
 }
-#quizForm{
+
+#quizForm {
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
-.container{
+
+.container {
     background-color: #84c3ec;
     width: 50vw;
     margin: auto;
     padding: 20px;
     border-radius: 20px;
-    .p{
-        label{
+
+    .p {
+        label {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding-inline: 2vw;
-            background-color:#5d9bc554;
+            background-color: #5d9bc554;
         }
-        label:hover{
+
+        label:hover {
             background: #5d9bc5;
             transition: all .5s;
         }
@@ -124,7 +140,7 @@ a:active{
 }
 
 
-#p0{
+#p0 {
     padding: 10px;
     font-size: 18px;
 
@@ -132,7 +148,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p1{
+
+#p1 {
     padding: 10px;
     font-size: 18px;
 
@@ -140,7 +157,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p2{
+
+#p2 {
     padding: 10px;
     font-size: 18px;
 
@@ -148,7 +166,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p3{
+
+#p3 {
     padding: 10px;
     font-size: 18px;
 
@@ -156,7 +175,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p4{
+
+#p4 {
     padding: 10px;
     font-size: 18px;
 
@@ -164,7 +184,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p5{
+
+#p5 {
     padding: 10px;
     font-size: 18px;
 
@@ -172,7 +193,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p6{
+
+#p6 {
     padding: 10px;
     font-size: 18px;
 
@@ -180,7 +202,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p7{
+
+#p7 {
     padding: 10px;
     font-size: 18px;
 
@@ -188,7 +211,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p8{
+
+#p8 {
     padding: 10px;
     font-size: 18px;
 
@@ -196,7 +220,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p9{
+
+#p9 {
     padding: 10px;
     font-size: 18px;
 
@@ -204,7 +229,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p10{
+
+#p10 {
     padding: 10px;
     font-size: 18px;
 
@@ -212,7 +238,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p11{
+
+#p11 {
     padding: 10px;
     font-size: 18px;
 
@@ -220,7 +247,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p12{
+
+#p12 {
     padding: 10px;
     font-size: 18px;
 
@@ -228,7 +256,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p13{
+
+#p13 {
     padding: 10px;
     font-size: 18px;
 
@@ -236,7 +265,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p14{
+
+#p14 {
     padding: 10px;
     font-size: 18px;
 
@@ -244,7 +274,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p15{
+
+#p15 {
     padding: 10px;
     font-size: 18px;
 
@@ -252,7 +283,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p16{
+
+#p16 {
     padding: 10px;
     font-size: 18px;
 
@@ -260,7 +292,8 @@ a:active{
     border-radius: 10px;
 
 }
-#p17{
+
+#p17 {
     padding: 10px;
     font-size: 18px;
 
@@ -268,7 +301,8 @@ a:active{
     border-radius: 10px;
 
 }
-label{
+
+label {
     display: block;
     padding: 7px;
     border-radius: 7px;
@@ -276,7 +310,7 @@ label{
     margin-bottom: 3px;
 }
 
-.botonGeo{
+.botonGeo {
     font-family: 'Poppins';
     font-size: 1.7vh;
     font-weight: 600;
@@ -289,12 +323,14 @@ label{
     border-radius: 100px;
     border: none;
 }
-.botonGeo:hover{
+
+.botonGeo:hover {
     transition: all .5s;
     background: rgb(76, 145, 185);
 }
-.volverButton{
-    color: white !important;
+
+.volverButton {
+    color: #ffffff;
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -304,7 +340,7 @@ label{
 
 /*Estilo de Deporte*/
 
-.tituloDep{
+.tituloDep {
 
 
     color: #fff;
@@ -317,39 +353,46 @@ label{
 
 
 }
-.contenido{
+
+.contenido {
     background-image: url("imagenes/fondoDep.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
-#quizzForm2{
+
+#quizzForm2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-div.deporte{
+
+div.deporte {
     background-color: rgb(28, 85, 45);
     width: 50vw;
     border-radius: 20px;
     margin: auto;
     padding: 40px;
-    h3{
+
+    h3 {
         margin: 0px;
     }
 }
+
 .tituloDep2 {
     text-align: center;
     border: none;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
 }
-.pr{
+
+.pr {
     display: flex;
     flex-direction: column;
     gap: 10px;
     border-radius: 7px;
     padding: 10px;
     margin: 10px 0;
-    label{
+
+    label {
         display: flex;
         justify-content: space-between;
         padding: 5px;
@@ -362,17 +405,19 @@ div.deporte{
         align-items: center;
         justify-content: space-between;
         padding-inline: 2vw;
-        label:hover{
+
+        label:hover {
 
             transition: all .5s;
         }
     }
-    label:hover{
-        background: rgba(0, 0, 0, 0.178) ;
+
+    label:hover {
+        background: rgba(0, 0, 0, 0.178);
     }
 }
 
-.botonDep{
+.botonDep {
     color: white;
     font-family: 'Poppins';
     font-size: 1.7vh;
@@ -386,21 +431,23 @@ div.deporte{
     border-radius: 100px;
     border: none;
 }
-.botonDep:hover{
+
+.botonDep:hover {
     background-color: rgb(46, 100, 69);
     transition: all .5s;
 }
 
 /*Estilo de Entretenimiento*/
 
-.PaginaDos{
+.PaginaDos {
 
     background-image: url(imagenes/fondoEnt.jpg);
     background-attachment: fixed;
     text-align: center;
     font-size: 18px;
 }
-.tituloEntre{
+
+.tituloEntre {
     background-color: #631e1e;
     box-shadow: 10px 10px 20px 0px #00000056;
     color: #fff;
@@ -410,21 +457,24 @@ div.deporte{
     font-weight: 400;
     font-style: normal;
 }
-.tituloEntre2{
+
+.tituloEntre2 {
     color: white;
     text-align: center;
     border: none;
     margin-bottom: 1.8rem;
     font-size: 30px;
 }
-#quizzForm3{
+
+#quizzForm3 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
 }
-.pre{
+
+.pre {
     color: white;
     display: flex;
     justify-content: center;
@@ -434,13 +484,15 @@ div.deporte{
     width: 45vw;
     border-radius: 20px;
     height: 25vh;
-    h3{
+
+    h3 {
         margin-block-start: 0;
         margin-block-end: 2em;
         font-size: 110%;
     }
 }
-.botonEntre{
+
+.botonEntre {
     color: white;
     font-family: 'Poppins';
     font-size: 1.7vh;
@@ -454,11 +506,13 @@ div.deporte{
     border-radius: 100px;
     border: none;
 }
-.botonEntre:hover{
+
+.botonEntre:hover {
     background: #551d1d;
     transition: all .5s;
 }
-.entreteni{
+
+.entreteni {
     display: block;
     padding: 1px;
     border-radius: 0;
@@ -467,7 +521,7 @@ div.deporte{
     margin-bottom: 2px;
 }
 
-.entreteni:hover{
+.entreteni:hover {
     background: none;
 }
 
@@ -478,11 +532,13 @@ div.deporte{
     border-radius: 50%;
     border: 2px solid #ccc;
 }
+
 #resultadoText {
+    display:none;
     text-align: center;
     font-size: 1.5em;
     margin-top: 20px;
-    color: #333;
+    color: #f6f5f5;
 }
 
 .Footer {
@@ -495,4 +551,13 @@ div.deporte{
     left: 0;
     width: 100%;
     font-size: 14px;
+}
+
+#loadingCanvas {
+    display: none;
+    margin: 20px auto;
+}
+
+#resultadoText {
+    display: none;
 }

@@ -26,6 +26,8 @@ const evaluateQuiz = () => {
         correctOption.parentElement.style.backgroundColor = "#2BDE9D";
     });
 
+    document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
+
     canvas.style.display = 'block'; // Mostrar canvas
     animateLoading(); // Iniciar animación
 
@@ -61,6 +63,8 @@ const evaluateQuiz2 = () => {
         const correctOption = document.querySelector(`input[name="p${i}"][value="${answer}"]`);
         correctOption.parentElement.style.backgroundColor = "#2BDE9D";
     });
+
+    document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
 
     canvas.style.display = 'block'; // Mostrar canvas
     animateLoading(); // Iniciar animación
@@ -148,6 +152,8 @@ const evaluateQuiz3 = () => {
     } else {
         document.getElementById('p5').style.backgroundColor = "#C9416A";
     }
+
+    document.querySelectorAll('input[type="text"], select').forEach(input => input.disabled = true);
 
     canvas.style.display = 'block'; // Mostrar canvas
     animateLoading(); // Iniciar animación
