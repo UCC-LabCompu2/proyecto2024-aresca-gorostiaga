@@ -1,19 +1,28 @@
 # ProyectoLab
+
+## Índice
+- [Autor](#autor)
+- [Contenido](#contenido)
+- [Contacto](#contacto)
+- [Enlace al Proyecto](#enlace-al-proyecto)
+
 ## Autor
 * Amparo **Garcia Aresca**
 * Franco **Garcia Gorostiaga**
-  
+
 ### Contenido
 
-En esta pagina realizamos un juego de preguntas que tratan sobre Geografia, Entretenimiento y Deportes, dependiendo la eleccion que tu elijas.
-Y al finalizar la pagina te dira la cantidad de preguntas acertadas.
+Este proyecto es un **juego de preguntas** sobre **Geografía, Entretenimiento y Deportes**.  
+Los usuarios pueden elegir una categoría y responder preguntas.  
+Al presionar el botón **"Corregir"**, se muestra la cantidad de respuestas correctas.
 
+
+## Contacto
 |Email|Autores|
 |-----|-------|
 |2304003@ucc.edu.ar|Amparo|
 |2312584@ucc.edu.ar|Franco|
 
-Link Proyecto pag1:[Pagina Principal](http://localhost:63342/proyecto2024-aresca-gorostiaga/index.html?_ijt=3gvh5hptk54fpak1uom8tsg869&_ij_reload=RELOAD_ON_SAVE)
-Link Proyecto pag2:[Pagina Entretenimiento](http://localhost:63342/proyecto2024-aresca-gorostiaga/entretenimiento.html?_ijt=rf3alo1iftdl75aqmae011tjs5&_ij_reload=RELOAD_ON_SAVE)
-Link Proyecto pag3:[Pagina Geografia](http://localhost:63342/proyecto2024-aresca-gorostiaga/geografia.html?_ijt=pd4cspin96v8psiqpcaocd8fm4&_ij_reload=RELOAD_ON_SAVE)
-Link Proyecto pag4:[Pagina Deporte](http://localhost:63342/proyecto2024-aresca-gorostiaga/deporte.html?_ijt=pd4cspin96v8psiqpcaocd8fm4&_ij_reload=RELOAD_ON_SAVE)
+## Enlace al proyecto
+
+Link Proyecto [https://ucc-labcompu2.github.io/proyecto2024-aresca-gorostiaga/](...)

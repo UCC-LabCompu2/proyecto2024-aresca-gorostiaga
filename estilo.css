@@ -28,8 +28,8 @@ a:link, a:visited {
 
 .TituloPrincipal {
     border: 7px dashed lightpink;
-    margin: 10px; /*espaciado externo*/
-    padding: 5px 30px;/*espaciado interno*/
+    margin: 10px;
+    padding: 5px 30px;
 }
 
 #principal {
@@ -77,8 +77,8 @@ a:active {
 
 .paginaUno {
     background-image: url("imagenes/fondoGeo.jpg");
-    background-size: cover;/*imagen cubre fondo*/
-    background-attachment: fixed;/*fondo no se mueve con scroll*/
+    background-size: cover;
+    background-attachment: fixed;
 
 
 }
@@ -358,6 +358,7 @@ label {
     background-image: url("imagenes/fondoDep.jpg");
     background-size: cover;
     background-attachment: fixed;
+    color: white;
 }
 
 #quizzForm2 {
@@ -525,14 +526,6 @@ div.deporte {
     background: none;
 }
 
-#loadingCanvas {
-    display: block;
-    margin: 20px auto;
-    background-color: #f9f9f9;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-}
-
 #resultadoText {
     display:none;
     text-align: center;
@@ -553,11 +546,16 @@ div.deporte {
     font-size: 14px;
 }
 
-#loadingCanvas {
-    display: none;
-    margin: 20px auto;
-}
-
 #resultadoText {
     display: none;
+}
+#confettiCanvas {
+    position: absolute;
+    top: 10vh; /* Ajusta según la altura de las preguntas */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 40vh; /* Solo sobre las preguntas */
+    pointer-events: none; /* No bloquea clics */
+    z-index: 10; /* Asegura que esté sobre el fondo pero debajo del texto */
 }

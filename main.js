@@ -1,3 +1,28 @@
+let animationFrame = null; // Variable global para manejar la animación
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const textInputs = document.querySelectorAll('input[type="text"]');
+
+    textInputs.forEach(input => {
+        input.addEventListener("input", function() {
+
+            if (/[^a-zA-Z\s]/.test(this.value)) {
+                alert("Solo se permiten letras en este campo.");
+                this.value = "";
+            }
+        });
+    });
+});
+
+/**
+ * Descripción de que hace la función
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
+
 const evaluateQuiz = () => {
     const correctAnswers = [2, 3, 2, 1, 2, 2]; // respuestas correctas
     let score = 0;
@@ -28,13 +53,19 @@ const evaluateQuiz = () => {
 
     document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
 
-    canvas.style.display = 'block'; // Mostrar canvas
-    animateLoading(); // Iniciar animación
-
     setTimeout(() => {
         showResults(score, correctAnswers.length); // Mostrar resultados después de la animación
     }, 500);
 };
+
+
+/**
+ * Descripción de que hace la función
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
 
 const evaluateQuiz2 = () => {
     const correctAnswers = [1, 2, 1, 2, 1, 3]; // respuestas correctas
@@ -66,13 +97,19 @@ const evaluateQuiz2 = () => {
 
     document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
 
-    canvas.style.display = 'block'; // Mostrar canvas
-    animateLoading(); // Iniciar animación
 
     setTimeout(() => {
         showResults(score, correctAnswers.length); // Mostrar resultados después de la animación
     }, 500);
 };
+
+/**
+ * Descripción de que hace la función
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
 
 const evaluateQuiz3 = () => {
     const correctAnswers = ["Freddie Mercury", "Piratas del Caribe", "Nirvana", "El Señor de los Anillos", "Avatar", "Siglo XIX"]; // respuestas correctas
@@ -155,61 +192,97 @@ const evaluateQuiz3 = () => {
 
     document.querySelectorAll('input[type="text"], select').forEach(input => input.disabled = true);
 
-    canvas.style.display = 'block'; // Mostrar canvas
-    animateLoading(); // Iniciar animación
-
     setTimeout(() => {
         showResults(score, correctAnswers.length); // Mostrar resultados después de la animación
     }, 500);
 };
 
-// Canvas y contexto
-const canvas = document.getElementById('loadingCanvas');
-const ctx = canvas ? canvas.getContext('2d') : null;
-let animationFrame;
+/**
+ * Descripción de que hace la función
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
 
-// Función para dibujar la rueda de carga
-const drawLoadingWheel = (progress) => {
-    const x = canvas.width / 2;
-    const y = canvas.height / 2;
-    const radius = 40;
+const lanzarConfeti = () => {
+    const canvas = document.getElementById("confettiCanvas");
+    const ctx = canvas.getContext("2d");
 
-    // Limpiar canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Ajustar tamaño del canvas solo sobre las preguntas
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight * 0.4; // Solo la parte superior
 
-    // Círculo de fondo
-    ctx.beginPath();
-    ctx.arc(x, y, radius, 0, Math.PI * 2);
-    ctx.fillStyle = '#ddd';
-    ctx.fill();
+    const confetti = [];
 
-    // Rueda de progreso
-    ctx.beginPath();
-    ctx.arc(x, y, radius, -Math.PI / 2, -Math.PI / 2 + (Math.PI * 2 * progress));
-    ctx.lineWidth = 10;
-    ctx.strokeStyle = '#2BDE9D';
-    ctx.stroke();
-};
+    for (let i = 0; i < 100; i++) {
+        confetti.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * (canvas.height) + (window.innerHeight * 0.15), // Solo sobre las preguntas
+            radius: Math.random() * 5 + 2,
+            color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+            speedY: Math.random() * 3 + 2, // Movimiento hacia abajo
+            speedX: (Math.random() - 0.5) * 2 // Movimiento horizontal aleatorio
+        });
+    }
 
-// Animación
-const animateLoading = () => {
-    let progress = 0;
+    const drawConfetti = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        confetti.forEach(particle => {
+            ctx.beginPath();
+            ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
+            ctx.fillStyle = particle.color;
+            ctx.fill();
+            particle.y += particle.speedY;
+            particle.x += particle.speedX;
 
-    const animate = () => {
-        progress += 0.05;
-        if (progress >= 1) progress = 0;
-        drawLoadingWheel(progress);
-        animationFrame = requestAnimationFrame(animate);
+            // Si el confetti sale del área, lo reiniciamos arriba
+            if (particle.y > canvas.height) {
+                particle.y = 0;
+                particle.x = Math.random() * canvas.width;
+            }
+        });
+
+        requestAnimationFrame(drawConfetti);
     };
 
-    animate();
+    drawConfetti();
+
+    setTimeout(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }, 5000);
 };
 
-// Mostrar resultados
+
+/**
+ * Esta funcion muestra los resultados obtenidos de las preguntas.
+ * @method showResults
+ * @param {number} score - Explicación de que valor almacena ParámetroA
+ * @param {number} total - Explicación de que valor almacena ParámetroB
+ */
+
 const showResults = (score, total) => {
-    cancelAnimationFrame(animationFrame); // Detener la animación
-    canvas.style.display = 'none'; // Ocultar canvas
+    console.log(`Ejecutando showResults(): score=${score}, total=${total}`);
+    if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+        animationFrame = null; // Reiniciar la variable después de cancelar
+    }
+
     const resultadoText = document.getElementById('resultadoText');
-    resultadoText.style.display = 'block'; // Mostrar resultados
-    resultadoText.textContent = `¡Respuestas correctas: ${score}/${total}!`;
+
+    if (resultadoText) {
+        resultadoText.style.display = 'block'; // Mostrar el resultado
+        resultadoText.textContent = `¡Respuestas correctas: ${score}/${total}!`;
+    } else {
+        console.error("No se encontró el elemento #resultadoText en el DOM.");
+    }
+
+    // Asegurarse de que ambos valores sean números para la comparación
+    if (parseInt(score) === parseInt(total)) {
+        console.log("¡Todas las respuestas son correctas! Lanzando confetti...");
+        lanzarConfeti(); // Solo se ejecuta si todas son correctas
+    } else {
+        console.log("No se alcanzó el puntaje máximo. No se lanza confetti.");
+    }
 };
+
