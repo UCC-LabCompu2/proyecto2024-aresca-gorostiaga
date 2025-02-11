@@ -1,26 +1,18 @@
 let animationFrame = null; // Variable global para manejar la animación
+const VERDE = "#2BDE9D";  // Correcto
+const ROJO = "#C9416A";   // Incorrecto
 
-document.addEventListener("DOMContentLoaded", function() {
-
-    const textInputs = document.querySelectorAll('input[type="text"]');
-
-    textInputs.forEach(input => {
-        input.addEventListener("input", function() {
-
-            if (/[^a-zA-Z\s]/.test(this.value)) {
-                alert("Solo se permiten letras en este campo.");
-                this.value = "";
-            }
-        });
-    });
-});
+function validarTexto(input) {
+    if (/[^a-zA-Z\s]/.test(input.value)) {
+        alert("Solo se permiten letras en este campo.");
+        input.value = "";
+    }
+}
 
 /**
- * Descripción de que hace la función
- * @method Nombre de la función
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * Evalúa el cuestionario, verifica las respuestas seleccionadas y calcula la puntuación del usuario.
+ * @method evaluateQuiz
+ * @return {void} No retorna un valor, pero actualiza el estado del formulario y muestra los resultados.
  */
 
 const evaluateQuiz = () => {
@@ -32,7 +24,7 @@ const evaluateQuiz = () => {
         const question = document.querySelector(`input[name="p${i}"]:checked`);
         if (!question) {
             alert(`Por favor, responda todas las preguntas antes de corregir.`);
-            return; // Detener la función si falta una respuesta
+            return;
         }
     }
 
@@ -41,30 +33,28 @@ const evaluateQuiz = () => {
         if (question) {
             if (parseInt(question.value) === answer) {
                 score++;
-                question.parentElement.style.backgroundColor = "#2BDE9D";
+                question.parentElement.style.backgroundColor = VERDE;
             } else {
-                question.parentElement.style.backgroundColor = "#C9416A";
+                question.parentElement.style.backgroundColor = ROJO;
             }
         }
 
         const correctOption = document.querySelector(`input[name="p${i}"][value="${answer}"]`);
-        correctOption.parentElement.style.backgroundColor = "#2BDE9D";
+        correctOption.parentElement.style.backgroundColor = VERDE;
     });
 
     document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
 
     setTimeout(() => {
-        showResults(score, correctAnswers.length); // Mostrar resultados después de la animación
+        showResults(score, correctAnswers.length);
     }, 500);
 };
 
 
 /**
- * Descripción de que hace la función
- * @method Nombre de la función
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * Evalúa el cuestionario de la categoría 2, verificando las respuestas seleccionadas y calculando la puntuación del usuario.
+ * @method evaluateQuiz2
+ * @return {void} No retorna un valor, pero actualiza el estado del formulario y muestra los resultados.
  */
 
 const evaluateQuiz2 = () => {
@@ -76,7 +66,7 @@ const evaluateQuiz2 = () => {
         const question = document.querySelector(`input[name="p${i}"]:checked`);
         if (!question) {
             alert(`Por favor, responda todas las preguntas antes de corregir.`);
-            return; // Detener la función si falta una respuesta
+            return;
         }
     }
 
@@ -85,14 +75,14 @@ const evaluateQuiz2 = () => {
         if (question) {
             if (parseInt(question.value) === answer) {
                 score++;
-                question.parentElement.style.backgroundColor = "#2BDE9D";
+                question.parentElement.style.backgroundColor = VERDE;
             } else {
-                question.parentElement.style.backgroundColor = "#C9416A";
+                question.parentElement.style.backgroundColor = ROJO;
             }
         }
 
         const correctOption = document.querySelector(`input[name="p${i}"][value="${answer}"]`);
-        correctOption.parentElement.style.backgroundColor = "#2BDE9D";
+        correctOption.parentElement.style.backgroundColor = VERDE;
     });
 
     document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
@@ -104,11 +94,10 @@ const evaluateQuiz2 = () => {
 };
 
 /**
- * Descripción de que hace la función
- * @method Nombre de la función
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * Evalúa el cuestionario de la categoría 3, verificando las respuestas ingresadas en campos de texto y selecciones,
+ * y calculando la puntuación del usuario.
+ * @method evaluateQuiz3
+ * @return {void} No retorna un valor, pero actualiza el estado del formulario y muestra los resultados.
  */
 
 const evaluateQuiz3 = () => {
@@ -140,54 +129,54 @@ const evaluateQuiz3 = () => {
     const p0 = document.getElementById('p0').value.trim();
     if (p0.toLowerCase() === correctAnswers[0].toLowerCase()) {
         score++;
-        document.getElementById('p0').style.backgroundColor = "#2BDE9D";
+        document.getElementById('p0').style.backgroundColor = VERDE;
     } else {
-        document.getElementById('p0').style.backgroundColor = "#C9416A";
+        document.getElementById('p0').style.backgroundColor = ROJO;
     }
 
     // Pregunta 2
     const p1 = document.getElementById('p1').value.trim();
     if (p1.toLowerCase() === correctAnswers[1].toLowerCase()) {
         score++;
-        document.getElementById('p1').style.backgroundColor = "#2BDE9D";
+        document.getElementById('p1').style.backgroundColor = VERDE;
     } else {
-        document.getElementById('p1').style.backgroundColor = "#C9416A";
+        document.getElementById('p1').style.backgroundColor = ROJO;
     }
 
     // Pregunta 3
     const p2 = document.getElementById('p2').value;
     if (p2 === correctAnswers[2]) {
         score++;
-        document.getElementById('p2').style.backgroundColor = "#2BDE9D";
+        document.getElementById('p2').style.backgroundColor = VERDE;
     } else {
-        document.getElementById('p2').style.backgroundColor = "#C9416A";
+        document.getElementById('p2').style.backgroundColor = ROJO;
     }
 
     // Pregunta 4
     const p3 = document.getElementById('p3').value.trim();
     if (p3.toLowerCase() === correctAnswers[3].toLowerCase()) {
         score++;
-        document.getElementById('p3').style.backgroundColor = "#2BDE9D";
+        document.getElementById('p3').style.backgroundColor = VERDE;
     } else {
-        document.getElementById('p3').style.backgroundColor = "#C9416A";
+        document.getElementById('p3').style.backgroundColor = ROJO;
     }
 
     // Pregunta 5
     const p4 = document.getElementById('p4').value;
     if (p4 === correctAnswers[4]) {
         score++;
-        document.getElementById('p4').style.backgroundColor = "#2BDE9D";
+        document.getElementById('p4').style.backgroundColor = VERDE;
     } else {
-        document.getElementById('p4').style.backgroundColor = "#C9416A";
+        document.getElementById('p4').style.backgroundColor = ROJO;
     }
 
     // Pregunta 6
     const p5 = document.getElementById('p5').value;
     if (p5 === correctAnswers[5]) {
         score++;
-        document.getElementById('p5').style.backgroundColor = "#2BDE9D";
+        document.getElementById('p5').style.backgroundColor = VERDE;
     } else {
-        document.getElementById('p5').style.backgroundColor = "#C9416A";
+        document.getElementById('p5').style.backgroundColor = ROJO;
     }
 
     document.querySelectorAll('input[type="text"], select').forEach(input => input.disabled = true);
@@ -198,11 +187,10 @@ const evaluateQuiz3 = () => {
 };
 
 /**
- * Descripción de que hace la función
- * @method Nombre de la función
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * Genera una animación de confeti utilizando canvas, ubicándolo en la parte superior de la pantalla y
+ * moviéndolo de forma aleatoria.
+ * @method lanzarConfeti
+ * @return {void} No retorna un valor, pero dibuja y anima el confeti en el `canvas`.
  */
 
 const lanzarConfeti = () => {
@@ -255,34 +243,34 @@ const lanzarConfeti = () => {
 
 
 /**
- * Esta funcion muestra los resultados obtenidos de las preguntas.
+ * Muestra los resultados del cuestionario, actualiza el DOM con la cantidad de respuestas correctas
+ * y lanza confeti si el usuario responde correctamente todas las preguntas.
  * @method showResults
- * @param {number} score - Explicación de que valor almacena ParámetroA
- * @param {number} total - Explicación de que valor almacena ParámetroB
+ * @param {number} score - Cantidad de respuestas correctas del usuario.
+ * @param {number} total - Cantidad total de preguntas en el cuestionario.
+ * @return {void} No retorna un valor, pero actualiza el contenido del resultado y, si es necesario, activa la animación de confeti.
  */
 
 const showResults = (score, total) => {
     console.log(`Ejecutando showResults(): score=${score}, total=${total}`);
     if (animationFrame) {
         cancelAnimationFrame(animationFrame);
-        animationFrame = null; // Reiniciar la variable después de cancelar
     }
 
     const resultadoText = document.getElementById('resultadoText');
 
     if (resultadoText) {
-        resultadoText.style.display = 'block'; // Mostrar el resultado
+        resultadoText.style.display = 'block';
         resultadoText.textContent = `¡Respuestas correctas: ${score}/${total}!`;
     } else {
         console.error("No se encontró el elemento #resultadoText en el DOM.");
     }
 
-    // Asegurarse de que ambos valores sean números para la comparación
     if (parseInt(score) === parseInt(total)) {
-        console.log("¡Todas las respuestas son correctas! Lanzando confetti...");
-        lanzarConfeti(); // Solo se ejecuta si todas son correctas
+        console.log("Todas las respuestas son correctas! Lanzando confetti...");
+        lanzarConfeti();
     } else {
-        console.log("No se alcanzó el puntaje máximo. No se lanza confetti.");
+        console.log("No alcanzó el puntaje máximo. No se lanza confetti.");
     }
 };
 

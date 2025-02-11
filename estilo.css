@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins';
+
     .Menu {
         a {
             color: #726464;
@@ -527,7 +528,7 @@ div.deporte {
 }
 
 #resultadoText {
-    display:none;
+    display: none;
     text-align: center;
     font-size: 1.5em;
     margin-top: 20px;
@@ -549,13 +550,14 @@ div.deporte {
 #resultadoText {
     display: none;
 }
+
 #confettiCanvas {
     position: absolute;
-    top: 10vh; /* Ajusta según la altura de las preguntas */
+    top: 10vh;
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 40vh; /* Solo sobre las preguntas */
-    pointer-events: none; /* No bloquea clics */
-    z-index: 10; /* Asegura que esté sobre el fondo pero debajo del texto */
+    height: 40vh;
+    pointer-events: none;
+    z-index: 10;
 }

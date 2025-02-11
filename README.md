@@ -25,4 +25,4 @@ Al presionar el botón **"Corregir"**, se muestra la cantidad de respuestas corr
 
 ## Enlace al proyecto
 
-Link Proyecto [https://ucc-labcompu2.github.io/proyecto2024-aresca-gorostiaga/](...)
+Link Proyecto [https://ucc-labcompu2.github.io/proyecto2024-aresca-gorostiaga/]
