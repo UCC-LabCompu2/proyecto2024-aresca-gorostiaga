@@ -1,7 +1,15 @@
-let animationFrame = null; // Variable global para manejar la animación
-const VERDE = "#2BDE9D";  // Correcto
-const ROJO = "#C9416A";   // Incorrecto
+let animationFrame = null;
+const VERDE = "#2BDE9D";
+const ROJO = "#C9416A";
 
+
+/**
+ * Valida que el texto ingresado en un input solo contenga letras y espacios.
+ * Si el usuario ingresa caracteres no permitidos, borra el contenido y muestra una alerta.
+ * @method validarTexto
+ * @param {HTMLInputElement} input - El campo de texto que se está validando.
+ * @return {void} No retorna nada, pero modifica el valor del input si es inválido.
+ */
 function validarTexto(input) {
     if (/[^a-zA-Z\s]/.test(input.value)) {
         alert("Solo se permiten letras en este campo.");
@@ -19,7 +27,6 @@ const evaluateQuiz = () => {
     const correctAnswers = [2, 3, 2, 1, 2, 2]; // respuestas correctas
     let score = 0;
 
-    // Verificar si hay respuestas no seleccionadas
     for (let i = 0; i < correctAnswers.length; i++) {
         const question = document.querySelector(`input[name="p${i}"]:checked`);
         if (!question) {
@@ -44,12 +51,8 @@ const evaluateQuiz = () => {
     });
 
     document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
-
-    setTimeout(() => {
-        showResults(score, correctAnswers.length);
-    }, 500);
+    showResults(score, correctAnswers.length);
 };
-
 
 /**
  * Evalúa el cuestionario de la categoría 2, verificando las respuestas seleccionadas y calculando la puntuación del usuario.
@@ -86,11 +89,7 @@ const evaluateQuiz2 = () => {
     });
 
     document.querySelectorAll('input[type="radio"]').forEach(button => button.disabled = true);
-
-
-    setTimeout(() => {
-        showResults(score, correctAnswers.length); // Mostrar resultados después de la animación
-    }, 500);
+    showResults(score, correctAnswers.length); // Mostrar resultados después de la animación
 };
 
 /**
@@ -104,23 +103,20 @@ const evaluateQuiz3 = () => {
     const correctAnswers = ["Freddie Mercury", "Piratas del Caribe", "Nirvana", "El Señor de los Anillos", "Avatar", "Siglo XIX"]; // respuestas correctas
     let score = 0;
 
-    // Verificar si todas las preguntas tienen respuesta
     for (let i = 0; i < correctAnswers.length; i++) {
         const questionInput = document.getElementById(`p${i}`);
 
-        // Verificar si es un campo de texto
         if (questionInput.tagName === "INPUT" && questionInput.type === "text") {
             if (questionInput.value.trim() === "") {
                 alert(`Por favor, responda todas las preguntas antes de corregir.`);
-                return; // Detener la función si falta una respuesta
+                return;
             }
         }
 
-        // Verificar si es un campo de tipo select
         if (questionInput.tagName === "SELECT") {
             if (questionInput.value === "") {
                 alert(`Por favor, responda todas las preguntas antes de corregir.`);
-                return; // Detener la función si falta una respuesta
+                return;
             }
         }
     }
@@ -180,10 +176,7 @@ const evaluateQuiz3 = () => {
     }
 
     document.querySelectorAll('input[type="text"], select').forEach(input => input.disabled = true);
-
-    setTimeout(() => {
-        showResults(score, correctAnswers.length); // Mostrar resultados después de la animación
-    }, 500);
+    showResults(score, correctAnswers.length);
 };
 
 /**
@@ -197,20 +190,19 @@ const lanzarConfeti = () => {
     const canvas = document.getElementById("confettiCanvas");
     const ctx = canvas.getContext("2d");
 
-    // Ajustar tamaño del canvas solo sobre las preguntas
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight * 0.4; // Solo la parte superior
+    canvas.height = window.innerHeight;
 
     const confetti = [];
 
     for (let i = 0; i < 100; i++) {
         confetti.push({
             x: Math.random() * canvas.width,
-            y: Math.random() * (canvas.height) + (window.innerHeight * 0.15), // Solo sobre las preguntas
+            y: Math.random() * canvas.height,
             radius: Math.random() * 5 + 2,
             color: `hsl(${Math.random() * 360}, 100%, 50%)`,
-            speedY: Math.random() * 3 + 2, // Movimiento hacia abajo
-            speedX: (Math.random() - 0.5) * 2 // Movimiento horizontal aleatorio
+            speedY: Math.random() * 3 + 2,
+            speedX: (Math.random() - 0.5) * 2
         });
     }
 
@@ -224,7 +216,6 @@ const lanzarConfeti = () => {
             particle.y += particle.speedY;
             particle.x += particle.speedX;
 
-            // Si el confetti sale del área, lo reiniciamos arriba
             if (particle.y > canvas.height) {
                 particle.y = 0;
                 particle.x = Math.random() * canvas.width;

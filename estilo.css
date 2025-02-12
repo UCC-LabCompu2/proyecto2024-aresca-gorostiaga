@@ -552,12 +552,11 @@ div.deporte {
 }
 
 #confettiCanvas {
-    position: absolute;
-    top: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
-    height: 40vh;
+    height: 100vh;
     pointer-events: none;
     z-index: 10;
 }
